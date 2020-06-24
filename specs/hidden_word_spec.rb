@@ -14,4 +14,8 @@ class TestHiddenWord < Minitest::Test
         assert_equal("snowman", @hidden_word.word)
     end
 
+    def test_initial_display()
+        assert_equal("*******", @hidden_word.display)
+    end
+
 end

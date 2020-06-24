@@ -6,4 +6,12 @@ require_relative('../hidden_word.rb')
 
 class TestHiddenWord < Minitest::Test
 
+    def setup()
+        @hidden_word = HiddenWord.new("snowman")
+    end
+
+    def test_has_word()
+        assert_equal("snowman", @hidden_word.word)
+    end
+
 end

@@ -7,4 +7,8 @@ class HiddenWord
         @display = "*" * word.length
     end
 
+    def has_letter?(letter)
+        return @word.include?(letter)
+    end
+
 end

@@ -18,4 +18,12 @@ class TestHiddenWord < Minitest::Test
         assert_equal("*******", @hidden_word.display)
     end
 
+    def test_has_letter__true()
+        assert_equal(true, @hidden_word.has_letter?("o"))
+    end
+
+    def test_has_letter__false()
+        assert_equal(false, @hidden_word.has_letter?("x"))
+    end
+
 end
